@@ -41,6 +41,10 @@
 
     .dropdown-menu {
         position: static;
+        /* 데스크톱의 width:max-content/min/max 를 모바일에선 해제 → 메뉴 전체 폭 사용 */
+        width: auto;
+        min-width: 0;
+        max-width: none;
         opacity: 1;
         visibility: visible;
         transform: translateY(0);
