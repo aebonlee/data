@@ -718,6 +718,37 @@
     flex-shrink: 0;
 }
 
+/* ── 모바일: 사이드바 TOC를 본문 위로 세로 스택 ── */
+@media (max-width: 900px) {
+    .guide-layout {
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 0;
+        min-height: 0;
+    }
+    .guide-sidebar {
+        width: 100%;
+        position: static;
+        top: auto;
+        height: auto;
+        max-height: 240px;
+        overflow-y: auto;
+        border-right: none;
+        border-bottom: 1px solid var(--border-light);
+        padding: 12px 0;
+        margin-bottom: 20px;
+    }
+    .guide-content {
+        padding: 8px 0 60px;
+    }
+    .page-header-ed + .guide-page,
+    .page-header-ed + .guide-layout {
+        padding-top: 24px;
+    }
+    .guide-section .table-responsive { max-width: 100%; }
+    .markdown-body img { max-width: 100%; height: auto; }
+}
+
 @media (max-width: 1024px) {
     .tool-tips-grid { grid-template-columns: 1fr 1fr; }
 }

@@ -311,19 +311,6 @@
 .aifree-intent-card p { font-size: 14px; line-height: 1.7; color: var(--text-secondary); margin: 0; }
 .aifree-cta-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: var(--s-7); }
 
-/* ── 반응형 ── */
-@media (max-width: 900px) {
-  .aifree-pg { grid-template-columns: 1fr; }
-  .aifree-pg-side { position: static; }
-  .aifree-ex-grid { grid-template-columns: 1fr; }
-  .aifree-ex-layout { grid-template-columns: 1fr; gap: 18px; }
-  .aifree-ex-side { position: static; flex-direction: row; flex-wrap: wrap; gap: 10px 24px; }
-  .aifree-ex-side-group { flex: 1 1 240px; }
-  .aifree-pp-layout { grid-template-columns: 1fr; }
-  .aifree-pp-side { position: static; flex-direction: row; flex-wrap: wrap; }
-  .aifree-pp-scenario { flex: 1 1 220px; }
-}
-
 /* ── 프롬프트 작성 실습 ── */
 .aifree-pp-layout { display: grid; grid-template-columns: 260px 1fr; gap: 28px; align-items: start; }
 .aifree-pp-side { position: sticky; top: 100px; display: flex; flex-direction: column; gap: 8px; }
@@ -367,3 +354,21 @@
 .aifree-pp-feedback strong i { color: var(--gold); margin-right: 6px; }
 .aifree-pp-feedback ul { margin: 0; padding-left: 20px; color: var(--text-secondary); line-height: 1.7; }
 .aifree-pp-answer { margin-top: 16px; }
+
+/* ── 반응형 (base 규칙들 뒤에 위치해야 오버라이드가 적용됨) ── */
+@media (max-width: 900px) {
+  .aifree-pg { grid-template-columns: 1fr; }
+  .aifree-pg-side { position: static; }
+  .aifree-ex-grid { grid-template-columns: 1fr; }
+  .aifree-ex-layout { grid-template-columns: 1fr; gap: 18px; }
+  .aifree-ex-side { position: static; flex-direction: row; flex-wrap: wrap; gap: 10px 24px; }
+  .aifree-ex-side-group { flex: 1 1 240px; }
+  .aifree-pp-layout { grid-template-columns: 1fr; }
+  .aifree-pp-side { position: static; flex-direction: row; flex-wrap: wrap; }
+  .aifree-pp-scenario { flex: 1 1 220px; }
+}
+@media (max-width: 600px) {
+  .aifree-ex-side, .aifree-pp-side { flex-direction: column; }
+  .aifree-ex-side-group, .aifree-pp-scenario { flex: 1 1 auto; }
+  .aifree-pp-bar-row { grid-template-columns: 72px 1fr 40px; }
+}
