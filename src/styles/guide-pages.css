@@ -4,8 +4,19 @@
    ============================================ */
 
 .guide-page {
-    padding-top: var(--nav-height);
+    /* navbar는 sticky(in-flow)이므로 nav-height 보정 불필요.
+       히어로(page-header-ed)→콘텐츠 간격을 다른 페이지(section-ed, 36px)와 통일 */
+    padding-top: 0;
     min-height: 100vh;
+}
+/* 히어로(page-header-ed)→콘텐츠 간격을 section-ed(36px)와 통일 */
+/* Module1/2/3: 외부 page-header-ed + guide-page */
+.page-header-ed + .guide-page {
+    padding-top: 36px;
+}
+/* Learn/PromptLearn: guide-page 내부 page-header-ed + guide-layout */
+.page-header-ed + .guide-layout {
+    padding-top: 36px;
 }
 .guide-layout {
     display: flex;
