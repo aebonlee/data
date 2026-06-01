@@ -104,7 +104,7 @@
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 36px;
+    gap: 28px;
     align-items: center;
     justify-content: center;
 }
