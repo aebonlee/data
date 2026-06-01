@@ -135,7 +135,7 @@ const About = (): ReactElement => {
             {/* 제작사 / 강사 링크 */}
             <div style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
               gap: '16px',
             }}>
               <Link to="/about/company" style={{
