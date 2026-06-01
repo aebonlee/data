@@ -61,7 +61,7 @@ const site: SiteConfig = {
 
   menuItems: [
     {
-      labelKey: '과정 소개',
+      labelKey: 'About',
       path: '/about',
       activePath: '/about',
       dropdown: [
