@@ -144,7 +144,7 @@
     position: absolute;
     top: calc(100% + var(--s-3));
     left: -16px;
-    min-width: 200px;
+    min-width: 240px;
     background: var(--bg-white);
     border: 1px solid var(--line);
     border-radius: var(--radius);
@@ -175,6 +175,7 @@
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
+    white-space: nowrap;
     transition: all 0.15s ease;
 }
 

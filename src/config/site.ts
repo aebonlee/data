@@ -80,9 +80,9 @@ const site: SiteConfig = {
       path: '/lecture',
       activePath: '/lecture',
       dropdown: [
-        { path: '/lecture/module1', labelKey: '모듈 1 · 탐색적 데이터분석(EDA)' },
-        { path: '/lecture/module2', labelKey: '모듈 2 · 시각화의 원리 및 기획' },
-        { path: '/lecture/module3', labelKey: '모듈 3 · 실무형 대시보드 구축' },
+        { path: '/lecture/module1', labelKey: '탐색적 데이터분석 (EDA)' },
+        { path: '/lecture/module2', labelKey: '시각화의 원리 및 기획' },
+        { path: '/lecture/module3', labelKey: '실무형 대시보드 구축' },
       ]
     },
     { labelKey: 'AI 학습자료', path: '/learn', activePath: '/learn' },
