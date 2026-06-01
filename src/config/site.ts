@@ -105,8 +105,8 @@ const site: SiteConfig = {
       dropdown: [
         { path: '/examples', labelKey: '전체 사례' },
         { path: '/examples/beginner', labelKey: '입문' },
-        { path: '/examples/basic', labelKey: '기본' },
-        { path: '/examples/advanced', labelKey: '심화' },
+        { path: '/examples/basic', labelKey: '기초' },
+        { path: '/examples/advanced', labelKey: '활용' },
       ]
     },
     {
