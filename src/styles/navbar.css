@@ -144,7 +144,10 @@
     position: absolute;
     top: calc(100% + var(--s-3));
     left: -16px;
-    min-width: 240px;
+    /* 내용 길이에 맞춰 자동 폭 (짧은 메뉴는 좁게, 긴 메뉴는 한 줄 유지) */
+    width: max-content;
+    min-width: 160px;
+    max-width: 320px;
     background: var(--bg-white);
     border: 1px solid var(--line);
     border-radius: var(--radius);
