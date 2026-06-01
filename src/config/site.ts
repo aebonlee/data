@@ -85,7 +85,42 @@ const site: SiteConfig = {
         { path: '/lecture/module3', labelKey: '모듈 3 · 실무형 대시보드 구축' },
       ]
     },
-    { path: '/recommended', labelKey: '추천 자료', activePath: '/recommended' },
+    { labelKey: 'AI 학습자료', path: '/learn', activePath: '/learn' },
+    {
+      labelKey: 'AI 도구',
+      path: '/tools',
+      activePath: '/tools',
+      dropdown: [
+        { path: '/tools', labelKey: 'AI 도구 모아보기' },
+        { path: '/tools/chatgpt', labelKey: 'ChatGPT' },
+        { path: '/tools/claude', labelKey: 'Claude' },
+        { path: '/tools/gemini', labelKey: 'Gemini' },
+        { path: '/tools/genspark', labelKey: 'Genspark' },
+      ]
+    },
+    {
+      labelKey: '활용 사례',
+      path: '/examples',
+      activePath: '/examples',
+      dropdown: [
+        { path: '/examples', labelKey: '전체 사례' },
+        { path: '/examples/beginner', labelKey: '입문' },
+        { path: '/examples/basic', labelKey: '기본' },
+        { path: '/examples/advanced', labelKey: '심화' },
+      ]
+    },
+    {
+      labelKey: '프롬프트',
+      path: '/prompt/learn',
+      activePath: '/prompt',
+      dropdown: [
+        { path: '/prompt/learn', labelKey: '프롬프트 학습' },
+        { path: '/prompt/practice', labelKey: '프롬프트 실습' },
+        { path: '/prompt/cases', labelKey: '프롬프트 사례' },
+      ]
+    },
+    { labelKey: 'AI 실습실', path: '/playground', activePath: '/playground' },
+    { labelKey: '추천 자료', path: '/recommended', activePath: '/recommended' },
   ],
 
   footerLinks: [

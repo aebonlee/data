@@ -32,6 +32,17 @@ const AboutPage = lazy(() => import('../pages/About'));
 const CompanyIntro = lazy(() => import('../pages/CompanyIntro'));
 const InstructorIntro = lazy(() => import('../pages/InstructorIntro'));
 
+// AI 메뉴 (ai-free 포팅): AI학습자료 · AI도구 · 사례 · 프롬프트 · AI실습실
+const Learn = lazy(() => import('../pages/learn/Learn'));
+const Tools = lazy(() => import('../pages/Tools'));
+const ToolGuide = lazy(() => import('../pages/ToolGuide'));
+const Examples = lazy(() => import('../pages/Examples'));
+const PromptLearn = lazy(() => import('../pages/prompt/PromptLearn'));
+const PromptPractice = lazy(() => import('../pages/prompt/PromptPractice'));
+const PromptCases = lazy(() => import('../pages/prompt/PromptCases'));
+const Playground = lazy(() => import('../pages/Playground'));
+const AdminAllocation = lazy(() => import('../pages/AdminAllocation'));
+
 const Loading = (): ReactElement => (
   <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '60vh' }}>
     <div className="loading-spinner"></div>
@@ -76,6 +87,22 @@ const PublicLayout = (): ReactElement => {
             <Route path="/lecture/module1" element={<Module1 />} />
             <Route path="/lecture/module2" element={<Module2 />} />
             <Route path="/lecture/module3" element={<Module3 />} />
+
+            {/* AI 메뉴 (ai-free 포팅) */}
+            <Route path="/learn" element={<Learn />} />
+            <Route path="/tools" element={<Tools />} />
+            <Route path="/tools/:provider" element={<ToolGuide />} />
+            <Route path="/examples" element={<Examples />} />
+            <Route path="/examples/:level" element={<Examples />} />
+            <Route path="/prompt/learn" element={<PromptLearn />} />
+            <Route path="/prompt/practice" element={<PromptPractice />} />
+            <Route path="/prompt/cases" element={<PromptCases />} />
+            {site.features.auth && (
+              <>
+                <Route path="/playground" element={<AuthGuard><Playground /></AuthGuard>} />
+                <Route path="/admin/allocation" element={<AuthGuard><AdminAllocation /></AuthGuard>} />
+              </>
+            )}
 
             {/* About */}
             <Route path="/about" element={<AboutPage />} />

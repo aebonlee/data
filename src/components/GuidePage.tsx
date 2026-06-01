@@ -35,6 +35,7 @@ interface GuidePageProps {
   dataFiles: DataFile[];
   ctaBanner?: React.ReactNode;
   sidebarFooter?: React.ReactNode;
+  heroEyebrow?: string;
 }
 
 const markdownComponents = {
@@ -52,7 +53,7 @@ const markdownComponents = {
   },
 };
 
-export default function GuidePage({ seoTitle, seoTitleEn, seoDescription, path, dataFiles, ctaBanner, sidebarFooter }: GuidePageProps) {
+export default function GuidePage({ seoTitle, seoTitleEn, seoDescription, path, dataFiles, ctaBanner, sidebarFooter, heroEyebrow }: GuidePageProps) {
   const { language } = useLanguage();
   const isKo = language === 'ko';
 
@@ -88,6 +89,15 @@ export default function GuidePage({ seoTitle, seoTitleEn, seoDescription, path, 
         description={seoDescription}
         path={path}
       />
+      {heroEyebrow && (
+        <section className="page-header-ed">
+          <div className="container">
+            <div className="eyebrow">{heroEyebrow}</div>
+            <h2>{isKo ? seoTitle : (seoTitleEn || seoTitle)}</h2>
+            {seoDescription && <p>{seoDescription}</p>}
+          </div>
+        </section>
+      )}
       <div className="guide-layout">
         <aside className="guide-sidebar">
           <div className="guide-sidebar-title">{isKo ? '목차' : 'Contents'}</div>
