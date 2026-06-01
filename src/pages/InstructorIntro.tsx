@@ -46,9 +46,8 @@ const InstructorIntro = (): ReactElement => {
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
 
             {/* 프로필 카드 */}
-            <div style={{
+            <div className="instr-profile" style={{
               display: 'grid',
-              gridTemplateColumns: '240px 1fr',
               gap: '36px',
               marginBottom: '48px',
               padding: '36px',
@@ -125,7 +124,7 @@ const InstructorIntro = (): ReactElement => {
                 </div>
 
                 <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', marginBottom: '12px', letterSpacing: '0.08em' }}>KEY INFO</div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+                <div className="instr-keyinfo" style={{ display: 'grid', gap: '8px' }}>
                   {[
                     ['직위', '드림아이티비즈 대표'],
                     ['학위', '박사 (Ph.D)'],
@@ -151,7 +150,7 @@ const InstructorIntro = (): ReactElement => {
             <h3 style={{ fontSize: '20px', color: 'var(--navy-800)', fontWeight: 700, marginBottom: '20px' }}>
               전문 분야
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '14px', marginBottom: '48px' }}>
+            <div className="instr-grid3" style={{ display: 'grid', gap: '14px', marginBottom: '48px' }}>
               {EXPERTISE.map((e) => (
                 <div key={e.area} style={{
                   padding: '20px',
@@ -200,7 +199,7 @@ const InstructorIntro = (): ReactElement => {
             <h3 style={{ fontSize: '20px', color: 'var(--navy-800)', fontWeight: 700, marginBottom: '20px' }}>
               주요 AI 교육 사이트
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '48px' }}>
+            <div className="instr-grid3" style={{ display: 'grid', gap: '12px', marginBottom: '48px' }}>
               {EDUCATION_SITES.map((s) => (
                 <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" style={{
                   padding: '16px 20px',

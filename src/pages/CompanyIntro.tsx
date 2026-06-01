@@ -29,9 +29,8 @@ const CompanyIntro = (): ReactElement => {
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
 
             {/* 회사 소개 */}
-            <div style={{
+            <div className="co-2col" style={{
               display: 'grid',
-              gridTemplateColumns: '1fr 1fr',
               gap: '32px',
               marginBottom: '48px',
               alignItems: 'center',
@@ -123,7 +122,7 @@ const CompanyIntro = (): ReactElement => {
             <h3 style={{ fontSize: '20px', color: 'var(--navy-800)', fontWeight: 700, marginBottom: '20px' }}>
               기술 스택
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px', marginBottom: '48px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '12px', marginBottom: '48px' }}>
               {TECH_STACK.map((tech) => (
                 <div key={tech.name} style={{
                   padding: '20px',
@@ -143,7 +142,7 @@ const CompanyIntro = (): ReactElement => {
             <h3 style={{ fontSize: '20px', color: 'var(--navy-800)', fontWeight: 700, marginBottom: '20px' }}>
               서비스 영역
             </h3>
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginBottom: '48px' }}>
+            <div className="co-2col" style={{ display: 'grid', gap: '16px', marginBottom: '48px' }}>
               {[
                 { icon: 'fa-graduation-cap', title: '대학교 교육 플랫폼', desc: '한신대, 한국기술교육대 등 대학 교과목 전용 사이트 제작·운영' },
                 { icon: 'fa-building', title: '기업 교육 플랫폼', desc: '다스코, KOMIPO 등 기업 맞춤 AI 교육 플랫폼 구축' },

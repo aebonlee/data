@@ -1911,3 +1911,22 @@
 /* ── Practice key status ── */
 [data-theme="dark"] .ps-key-status.active { background: var(--bg-medium-gray); color: #CBD5E1; }
 [data-theme="dark"] .ps-key-status.inactive { background: #3E2C1A; color: #BCAAA4; }
+
+/* ── 강사 소개 반응형 그리드 (인라인 display:grid + 여기서 컬럼 지정) ── */
+.instr-profile { grid-template-columns: 240px 1fr; }
+.instr-keyinfo { grid-template-columns: 1fr 1fr; }
+.instr-grid3 { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 768px) {
+  .instr-profile { grid-template-columns: 1fr; }
+  .instr-grid3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .instr-keyinfo { grid-template-columns: 1fr; }
+  .instr-grid3 { grid-template-columns: 1fr; }
+}
+
+/* ── 운영 기관(회사) 반응형 2단 그리드 ── */
+.co-2col { grid-template-columns: 1fr 1fr; }
+@media (max-width: 768px) {
+  .co-2col { grid-template-columns: 1fr; }
+}
