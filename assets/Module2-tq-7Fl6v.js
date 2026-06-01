@@ -1,4 +1,4 @@
-import{u as i,j as e}from"./index-B195Cwpa.js";import{G as n}from"./GuidePage-6koMupNF.js";import"./SEOHead-DV6mdn_o.js";const s={id:"module2-viz",icon:"fa-chart-pie",title:"모듈 2 · 시각화의 원리 및 기획",titleEn:"Module 2 · Visualization Principles & Planning",sections:[{title:"시각화의 목적 — 메시지와 타겟 정의",titleEn:"Purpose of Visualization — Message and Audience",content:`데이터 시각화는 **예쁜 그림을 그리는 일이 아니라, 데이터가 담고 있는 메시지를 가장 빠르고 정확하게 전달하는 일**입니다. 차트를 그리기 전에 반드시 두 가지를 먼저 정의해야 합니다 — **무엇을 말할 것인가(메시지)**, **누구에게 말할 것인가(타겟)**.
+import{u as i,j as e}from"./index-BT6CuhRS.js";import{G as n}from"./GuidePage-UVahA_Gr.js";import"./SEOHead-y98l7kdB.js";const s={id:"module2-viz",icon:"fa-chart-pie",title:"모듈 2 · 시각화의 원리 및 기획",titleEn:"Module 2 · Visualization Principles & Planning",sections:[{title:"시각화의 목적 — 메시지와 타겟 정의",titleEn:"Purpose of Visualization — Message and Audience",content:`데이터 시각화는 **예쁜 그림을 그리는 일이 아니라, 데이터가 담고 있는 메시지를 가장 빠르고 정확하게 전달하는 일**입니다. 차트를 그리기 전에 반드시 두 가지를 먼저 정의해야 합니다 — **무엇을 말할 것인가(메시지)**, **누구에게 말할 것인가(타겟)**.
 
 ### 핵심 메시지(So-What) 도출
 

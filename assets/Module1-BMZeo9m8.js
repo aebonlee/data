@@ -1,4 +1,4 @@
-import{u as s,j as e}from"./index-B195Cwpa.js";import{G as i}from"./GuidePage-6koMupNF.js";import"./SEOHead-DV6mdn_o.js";const n={id:"module1-eda",icon:"fa-magnifying-glass-chart",title:"모듈 1 · 탐색적 데이터분석(EDA)",titleEn:"Module 1 · Exploratory Data Analysis",sections:[{title:"EDA란 무엇인가 — 목적과 실무적 가치",titleEn:"What is EDA — Purpose and Practical Value",content:`**탐색적 데이터분석(EDA, Exploratory Data Analysis)**은 통계학자 존 튜키(John Tukey)가 제안한 개념으로, 데이터를 본격적으로 모델링하기 전에 **데이터의 구조·패턴·이상치·관계를 시각화와 요약통계로 탐색하는 과정**입니다.
+import{u as s,j as e}from"./index-BT6CuhRS.js";import{G as i}from"./GuidePage-UVahA_Gr.js";import"./SEOHead-y98l7kdB.js";const n={id:"module1-eda",icon:"fa-magnifying-glass-chart",title:"모듈 1 · 탐색적 데이터분석(EDA)",titleEn:"Module 1 · Exploratory Data Analysis",sections:[{title:"EDA란 무엇인가 — 목적과 실무적 가치",titleEn:"What is EDA — Purpose and Practical Value",content:`**탐색적 데이터분석(EDA, Exploratory Data Analysis)**은 통계학자 존 튜키(John Tukey)가 제안한 개념으로, 데이터를 본격적으로 모델링하기 전에 **데이터의 구조·패턴·이상치·관계를 시각화와 요약통계로 탐색하는 과정**입니다.
 
 ### EDA를 왜 하는가
 

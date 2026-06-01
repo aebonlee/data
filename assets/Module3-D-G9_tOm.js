@@ -1,4 +1,4 @@
-import{u as n,j as e}from"./index-B195Cwpa.js";import{G as i}from"./GuidePage-6koMupNF.js";import"./SEOHead-DV6mdn_o.js";const o={id:"module3-dashboard",icon:"fa-gauge-high",title:"모듈 3 · 실무형 대시보드 구축",titleEn:"Module 3 · Building Practical Dashboards",sections:[{title:"표(Table)를 직관적으로 — 조건부 서식 · 스파크라인 · 데이터 막대",titleEn:"Make Tables Intuitive — Conditional Formatting, Sparklines, Data Bars",content:`대시보드를 만들기 전에, **표 자체를 한눈에 읽히게** 만드는 인-셀(in-cell) 시각화 기법부터 익힙니다. 차트를 추가하지 않고도 셀 안에서 값의 크기·추세·상태를 표현할 수 있습니다.
+import{u as n,j as e}from"./index-BT6CuhRS.js";import{G as i}from"./GuidePage-UVahA_Gr.js";import"./SEOHead-y98l7kdB.js";const o={id:"module3-dashboard",icon:"fa-gauge-high",title:"모듈 3 · 실무형 대시보드 구축",titleEn:"Module 3 · Building Practical Dashboards",sections:[{title:"표(Table)를 직관적으로 — 조건부 서식 · 스파크라인 · 데이터 막대",titleEn:"Make Tables Intuitive — Conditional Formatting, Sparklines, Data Bars",content:`대시보드를 만들기 전에, **표 자체를 한눈에 읽히게** 만드는 인-셀(in-cell) 시각화 기법부터 익힙니다. 차트를 추가하지 않고도 셀 안에서 값의 크기·추세·상태를 표현할 수 있습니다.
 
 ### 1. 조건부 서식 (Conditional Formatting)
 
